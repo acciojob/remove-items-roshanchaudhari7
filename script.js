@@ -1,10 +1,9 @@
 //your JS code here. If required.
-let butt = document.querySelector('input[type="button"][value="Select and Remove"]');
+let btn = document.querySelector('input[type="button"][value="Select and Remove"]');
 let select = document.querySelector("#colorSelect");
 
-butt.addEventListener("click", deleted);
+btn.addEventListener("click", deletedList);
 
-function deleted() {
-	let selected = select.selected;
-    select.remove(selected);
+function deletedList() {
+    select.remove(select.selectedIndex);
 }
